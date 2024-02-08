@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 // const mongoDbClient = require("mongodb").MongoClient
-const mongoURI = 'mongodb+srv://nitinjha9838:Nikhil2510@cluster0.np8t79h.mongodb.net/test?retryWrites=true&w=majority'
-// mongodb://nitinjha9838:Nikhil2510@merncluster-shard-00-00.d1d4z.mongodb.net:27017,merncluster-shard-00-01.d1d4z.mongodb.net:27017,merncluster-shard-00-02.d1d4z.mongodb.net:27017/?ssl=true&replicaSet=atlas-eusy5p-shard-0&authSource=admin&retryWrites=true&w=majority
+const mongoURI = 'mongodb+srv://nitinjha9838:<password>@cluster0.np8t79h.mongodb.net/test?retryWrites=true&w=majority'
+// mongodb://nitinjha9838:<password>@merncluster-shard-00-00.d1d4z.mongodb.net:27017,merncluster-shard-00-01.d1d4z.mongodb.net:27017,merncluster-shard-00-02.d1d4z.mongodb.net:27017/?ssl=true&replicaSet=atlas-eusy5p-shard-0&authSource=admin&retryWrites=true&w=majority
 module.exports = function (callback) {
     mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         // mongoDbClient.connect(mongoURI, { useNewUrlParser: true }, async(err, result) => {
